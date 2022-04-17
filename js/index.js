@@ -15,10 +15,11 @@ radios.forEach((radio) => {
     });
 });
 
-submitButton.addEventListener('click', () => {
+submitButton.addEventListener('click', (e) => {
+    e.preventDefault;
     ratingCard.classList.add('hide');
     thankYouCard.classList.remove('hide');
-    });
+});
 
 
 

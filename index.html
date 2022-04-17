@@ -10,73 +10,67 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <!-- Rating state start -->
-  <div class="container rating" id="rating">
-      <div class="rating-img-border">
-        <img class="rating-img" src="./images/icon-star.svg" alt="a star icon">
-      </div>
+
+  <div class="main-container">
+
+      <!-- Rating state start -->
+    <div class="card-container rating" id="rating">
+      <img class="rating-img" src="./images/icon-star.svg" alt="a star icon">
       <h2 class="rating-header">How did we do?</h2>
       <p class="rating-text">
         Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!
       </p>
-      <form action="#">
-        <div class="select-buttons">
-          <label class="rating-select">
-            <input   type="radio" name="rating-selection"> 
-            <span id="1" class="checkmark">1</span>
+      <form class="select-buttons-width"action="#">
+        <div class="select-buttons row">
+          <label class="rating-select-wrapper">
+            <input class="hide" type="radio" name="rating-selection"> 
+            <span id="1" class="select-button">1</span>
           </label>
-          <label class="rating-select">
-            <input  type="radio" name="rating-selection">
-            <span id="2" class="checkmark">2</span>
+          <label class="rating-select-wrapper">
+            <input class="hide"  type="radio" name="rating-selection">
+            <span id="2" class="select-button">2</span>
           </label>
-          <label class="rating-select">
-            <input  type="radio" name="rating-selection">
-            <span id="3" class="checkmark">3</span>
+          <label class="rating-select-wrapper">
+            <input class="hide"  type="radio" name="rating-selection">
+            <span id="3" class="select-button">3</span>
           </label>
-          <label class="rating-select">
-            <input  type="radio" name="rating-selection">
-            <span id="4" class="checkmark">4</span>
+          <label class="rating-select-wrapper">
+            <input class="hide"  type="radio" name="rating-selection">
+            <span id="4" class="select-button">4</span>
           </label>
-          <label class="rating-select">
-            <input  type="radio" name="rating-selection">
-            <span id="5" class="checkmark">5</span>
+          <label class="rating-select-wrapper">
+            <input class="hide"  type="radio" name="rating-selection">
+            <span id="5" class="select-button">5</span>
           </label>
         </div>
         <div class="submit-button-container" id="rating-submit-button">
           <label class="rating-submit-button">Submit
-            <input type="submit" id="submit" name="submit-button">
+            <input class="hide" type="submit" id="submit" name="submit-button">
           </label>
         </div>
       </form>
-  </div>
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-  <div class="container thank-you hide" id="thank-you">
+    </div>
+        <!-- Rating state end -->
+        <!-- Thank you state start -->
+    <div class="card-container thank-you hide" id="thank-you">
       <img src="images/illustration-thank-you.svg" alt="a thank you illustration">
       <h5 class="thank-you-small-header" id="thank-you-small-header"></h5>
-
+    
       <h2 class="thank-you-header">Thank you!</h2>
-
+    
       <p class="thank-you-text">
-      We appreciate you taking the time to give a rating. If you ever need more support, 
-      don’t hesitate to get in touch!
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
       </p>
+    </div>
+    <!-- Thank you state end -->
   </div>
-  <!-- Thank you state end -->
-
   
-  <div class="attribution">
+  <div class="attribution hide">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
