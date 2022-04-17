@@ -16,7 +16,7 @@ radios.forEach((radio) => {
 });
 
 submitButton.addEventListener('click', (e) => {
-    e.preventDefault;
+    e.preventDefault();
     ratingCard.classList.add('hide');
     thankYouCard.classList.remove('hide');
 });
